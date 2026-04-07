@@ -1,153 +1,205 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="hi">
 <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="icon" href="https://digitalseva.csc.gov.in/assets1/webpimage/favicon.webp" type="image/webp">
-   <title>Vishwakarma Internet Cafe | Digital Seva Sirdala</title>
-   
-   <link rel="stylesheet" href="https://digitalseva.csc.gov.in/assets1/css/bootstrap.min.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-   <link rel="stylesheet" href="https://digitalseva.csc.gov.in/assets1/css/csc-lp.css">
-   
-   <style>
-      .top-header { background-color: #f8f9fa; border-bottom: 1px solid #ddd; }
-      .navbar-brand img { height: 50px; }
-      .banner { background: linear-gradient(rgba(0,51,153,0.8), rgba(0,51,153,0.8)), url('https://digitalseva.csc.gov.in/assets1/webpimage/bg-tree.webp'); color: white; padding: 60px 0; }
-      .custom-btn-primary { background-color: #ff6600; border: none; color: white; padding: 10px 25px; font-weight: bold; }
-      .custom-btn-primary:hover { background-color: #e65c00; color: white; }
-      .services-box { transition: 0.3s; border: 1px solid #eee; padding: 20px; border-radius: 10px; height: 100%; }
-      .services-box:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.1); transform: translateY(-5px); }
-      .marquee { background: #d32f2f; color: white; padding: 10px 0; }
-   </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vishwakarma Internet Cafe | Digital Seva Sirdala</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root { --primary-blue: #1e3a8a; --secondary-blue: #0056b3; --accent-orange: #ff6600; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; }
+        
+        /* Navbar Styling */
+        .top-bar { background: #fff; border-bottom: 3px solid var(--primary-blue); padding: 10px 0; }
+        .main-nav { background: var(--primary-blue); color: white; }
+        .nav-link { color: white !important; font-weight: 500; }
+        
+        /* Hero Section */
+        .hero-section { 
+            background: linear-gradient(rgba(30, 58, 138, 0.8), rgba(30, 58, 138, 0.8)), url('https://digitalseva.csc.gov.in/assets1/webpimage/bg-tree.webp');
+            background-size: cover; color: white; padding: 80px 0; border-bottom: 5px solid var(--accent-orange);
+        }
+
+        /* Notification Marquee */
+        .news-ticker { background: #d32f2f; color: white; padding: 8px 0; font-size: 0.9rem; }
+
+        /* Service Cards */
+        .service-box { 
+            background: white; border-radius: 10px; padding: 20px; text-align: center;
+            border: 1px solid #ddd; transition: 0.3s; height: 100%;
+        }
+        .service-box:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.1); transform: translateY(-5px); border-color: var(--primary-blue); }
+        .service-icon { font-size: 40px; color: var(--primary-blue); mb: 15px; }
+
+        /* Custom Tabs */
+        .nav-tabs .nav-link.active { background-color: var(--primary-blue); color: white !important; border: none; }
+        
+        .footer { background: #212529; color: #ccc; padding: 50px 0 20px; }
+        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 15px 20px; rounded-circle: 50px; z-index: 100; border-radius: 50px; text-decoration: none; font-weight: bold; }
+    </style>
 </head>
-
 <body>
-   <nav class="navbar navbar-expand-lg sticky-top bg-white shadow-sm">
-      <div class="container-fluid d-flex justify-content-between align-items-center">
-         <div class="d-flex align-items-center">
-            <a class="navbar-brand" href="#">
-               <img src="https://digitalseva.csc.gov.in/assets1/images/csc-logo.svg" alt="CSC Logo">
-            </a>
-            <div class="ms-2 border-start ps-2">
-               <h5 class="mb-0 fw-bold text-primary">VISHWAKARMA INTERNET CAFE</h5>
-               <small class="text-muted">Sirdala, Nawada, Bihar</small>
-            </div>
-         </div>
-         <div class="d-flex align-items-center">
-            <a href="https://wa.me/917903027843" class="btn btn-success rounded-pill px-4 me-2">
-               <i class="fab fa-whatsapp"></i> WhatsApp
-            </a>
-            <a href="tel:7903027843" class="btn btn-primary rounded-pill px-4">Login</a>
-         </div>
-      </div>
-   </nav>
 
-   <section class="banner">
-      <div class="container">
-         <div class="row align-items-center">
-            <div class="col-lg-7 text-white">
-               <h1 class="display-5 fw-bold">Sirdala का सबसे भरोसेमंद <span class="text-warning">Digital Kendra</span></h1>
-               <p class="lead">10+ सालों का अनुभव | सभी सरकारी और प्राइवेट ऑनलाइन फॉर्म भरने की सुविधा।</p>
-               <ul class="list-unstyled mb-4">
-                  <li><i class="fa fa-check-circle text-warning"></i> सटीक और तेज़ सर्विस</li>
-                  <li><i class="fa fa-check-circle text-warning"></i> सभी सरकारी योजनाएं (G2C)</li>
-                  <li><i class="fa fa-check-circle text-warning"></i> बैंकिंग और इंश्योरेंस (B2C)</li>
-               </ul>
-               <a href="#services" class="custom-btn-primary btn rounded-pill">हमारी सेवाएँ देखें</a>
+    <div class="top-bar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img src="https://digitalseva.csc.gov.in/assets1/images/csc-logo.svg" height="50" alt="CSC">
+                <div class="ms-3 border-start ps-3">
+                    <h4 class="mb-0 fw-bold text-dark">VISHWAKARMA INTERNET CAFE</h4>
+                    <small class="text-muted">Digital Seva Kendra, Sirdala (Nawada)</small>
+                </div>
             </div>
-            <div class="col-lg-5 d-none d-lg-block">
-               <img src="https://digitalseva.csc.gov.in/assets1/webpimage/bg-tree.webp" class="img-fluid opacity-75" alt="Service Image">
+            <div class="d-none d-md-block text-end">
+                <p class="mb-0 small fw-bold"><i class="fa fa-phone text-primary"></i> +91 7903027843</p>
+                <p class="mb-0 small"><i class="fa fa-envelope text-primary"></i> vishwakarmacafe@outlook.com</p>
             </div>
-         </div>
-      </div>
-   </section>
+        </div>
+    </div>
 
-   <section class="marquee">
-      <div class="container">
-         <marquee behavior="scroll" direction="left">
-            🔥 लेटेस्ट अपडेट: SSC, बिहार पुलिस और अग्निवीर के नए फॉर्म भरना शुरू | आधार से पैसे निकालने की सुविधा उपलब्ध | पैन कार्ड सुधार मात्र 3 दिनों में | विश्वकर्मा इंटरनेट कैफ़े में आपका स्वागत है!
-         </marquee>
-      </div>
-   </section>
+    <nav class="navbar navbar-expand-lg main-nav sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#jobs">New Jobs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-warning btn-sm fw-bold">VLE Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-   <section id="services" class="py-5">
-      <div class="container">
-         <h2 class="text-center mb-5 fw-bold">Our <span>Digital Services</span></h2>
-         
-         <div class="row g-4 justify-content-center">
-            <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-               <div class="services-box text-center">
-                  <img src="https://digitalseva.csc.gov.in/assets1/webpimage/central-logo/Aadhaar.webp" class="mb-2 w-50" alt="Aadhaar">
-                  <p class="fw-bold mb-0">Aadhaar Print</p>
-               </div>
-            </div>
-            <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-               <div class="services-box text-center">
-                  <img src="https://digitalseva.csc.gov.in/assets1/webpimage/central-logo/AYUSHMAN-BHARAT.webp" class="mb-2 w-50" alt="Ayushman">
-                  <p class="fw-bold mb-0">Ayushman Card</p>
-               </div>
-            </div>
-            <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-               <div class="services-box text-center">
-                  <img src="https://digitalseva.csc.gov.in/assets1/images/central-logo/pan-card.svg" class="mb-2 w-50" alt="PAN">
-                  <p class="fw-bold mb-0">PAN Card</p>
-               </div>
-            </div>
-            <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-               <div class="services-box text-center">
-                  <img src="https://digitalseva.csc.gov.in/assets1/webpimage/services/DSP_Digipay.webp" class="mb-2 w-50" alt="Banking">
-                  <p class="fw-bold mb-0">Money Transfer</p>
-               </div>
-            </div>
-            <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-               <div class="services-box text-center">
-                  <i class="fa fa-file-signature fa-3x text-primary mb-2"></i>
-                  <p class="fw-bold mb-0">All Exam Forms</p>
-               </div>
-            </div>
-            <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-               <div class="services-box text-center">
-                  <i class="fa fa-laptop-medical fa-3x text-danger mb-2"></i>
-                  <p class="fw-bold mb-0">PC Repairing</p>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
+    <div class="news-ticker">
+        <div class="container">
+            <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+                बड़ी सूचना: बिहार पुलिस और SSC के नए फॉर्म भरना शुरू हो चुके हैं... | अपने आधार को पैन से लिंक करवाएं... | विश्वकर्मा इंटरनेट कैफ़े में आपका स्वागत है!
+            </marquee>
+        </div>
+    </div>
 
-   <footer class="bg-dark text-white pt-5 pb-3">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-4 mb-4">
-               <h4 class="fw-bold text-warning mb-3">Vishwakarma Cafe</h4>
-               <p>हमारा लक्ष्य आपको सरकारी और डिजिटल सेवाओं का लाभ तेज़ी और पारदर्शिता के साथ पहुँचाना है।</p>
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Your Trusted Neighbourhood Kiosk</h1>
+            <p class="lead">Sirdala का सबसे विश्वसनीय डिजिटल केंद्र - 10 वर्षों का अटूट विश्वास।</p>
+            <div class="mt-4">
+                <a href="#services" class="btn btn-light btn-lg px-5 me-2">Explore Services</a>
+                <a href="https://wa.me/917903027843" class="btn btn-outline-light btn-lg px-5">Join WhatsApp Group</a>
             </div>
-            <div class="col-md-4 mb-4">
-               <h5 class="mb-3">Contact Us</h5>
-               <ul class="list-unstyled p-0">
-                  <li><i class="fa fa-map-marker-alt me-2 text-warning"></i> Nichen Bazar, Sirdala, Nawada, Bihar</li>
-                  <li><i class="fa fa-phone me-2 text-warning"></i> +91 7903027843</li>
-                  <li><i class="fa fa-envelope me-2 text-warning"></i> vishwakarmacafe@outlook.com</li>
-               </ul>
-            </div>
-            <div class="col-md-4 mb-4 text-md-end">
-               <h5>Follow Us</h5>
-               <div class="h3">
-                  <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
-                  <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
-                  <a href="https://wa.me/917903027843" class="text-white"><i class="fab fa-whatsapp"></i></a>
-               </div>
-            </div>
-         </div>
-         <hr class="border-secondary">
-         <div class="text-center">
-            <p class="small mb-0">Copyright &copy; 2026 Vishwakarma Internet Cafe | All Rights Reserved</p>
-         </div>
-      </div>
-   </footer>
+        </div>
+    </section>
 
-   <script src="https://digitalseva.csc.gov.in/assets1/js/jquery.min.js"></script>
-   <script src="https://digitalseva.csc.gov.in/assets1/js/bootstrap.bundle.min.js"></script>
+    <section class="container my-5" id="services">
+        <h2 class="text-center mb-4 font-bold">Our <span>Digital Services</span></h2>
+        
+        <ul class="nav nav-tabs justify-content-center mb-4" id="serviceTab" role="tablist">
+            <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#g2c">G2C Services</button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#b2c">B2C & Banking</button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tech">IT & Hardware</button></li>
+        </ul>
+
+        <div class="tab-content pt-3">
+            <div class="tab-pane fade show active" id="g2c">
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="service-box">
+                            <i class="fa fa-id-card service-icon"></i>
+                            <h5>Pan & Aadhar</h5>
+                            <p class="small text-muted">New Pan Card, Correction, & Aadhar Print.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service-box">
+                            <i class="fa fa-user-graduate service-icon"></i>
+                            <h5>Online Forms</h5>
+                            <p class="small text-muted">BSSC, SSC, Railway, UPSC, Police, Army.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service-box">
+                            <i class="fa fa-heartbeat service-icon"></i>
+                            <h5>Ayushman Bharat</h5>
+                            <p class="small text-muted">Free health card for your family.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service-box">
+                            <i class="fa fa-file-invoice service-icon"></i>
+                            <h5>Caste/Income/Res</h5>
+                            <p class="small text-muted">Jati, Awas, Aay certificate online apply.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="b2c">
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="service-box text-success">
+                            <i class="fa fa-university service-icon"></i>
+                            <h5>Aadhar Banking</h5>
+                            <p class="small text-muted">Withdraw money using Aadhar (AEPS).</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service-box">
+                            <i class="fa fa-bolt service-icon text-warning"></i>
+                            <h5>Electricity Bill</h5>
+                            <p class="small text-muted">Instant bill payment and receipt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tech">
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="service-box">
+                            <i class="fa fa-laptop-medical service-icon"></i>
+                            <h5>Hardware Repair</h5>
+                            <p class="small text-muted">Printer and PC Repairing, SSD Upgrade.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>About Us</h5>
+                    <p class="small">Vishwakarma Internet Cafe is Sirdala's first choice for all digital needs since 2016.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Location</h5>
+                    <p class="small">Nichen Bazar, Sirdala, Nawada, Bihar - 805127</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Follow Us</h5>
+                    <div class="h4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 border-secondary">
+            <p class="mb-0 small">Copyright © 2026 Vishwakarma Internet Cafe | Designed for VLE Kanhaiya Vishwakarma</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/917903027843" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i> Chat with Us
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
